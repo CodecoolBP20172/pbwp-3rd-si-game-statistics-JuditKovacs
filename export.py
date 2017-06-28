@@ -1,2 +1,17 @@
-
-# Export functions
+from reports import*
+f = open('tetste1.txt', 'w')
+c_g = count_games("game_stat.txt")
+dec = decide("game_stat.txt", 2000)
+g_l = get_latest("game_stat.txt")
+c_b_g = count_by_genre("game_stat.txt", 'Simulation')
+g_l_n = get_line_number_by_title("game_stat.txt", "The Sims 2")
+f.write(str(c_g))
+f.write(" \n")
+f.write(str(dec))
+f.write(" \n")
+f.write(str(g_l))
+f.write(" \n")
+f.write(str(c_b_g))
+f.write(" \n")
+f.write(str(g_l_n))
+f.close()
