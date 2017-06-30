@@ -1,2 +1,21 @@
-
+from reports import*
+f = open('test2.txt', 'w')
+m_p = get_most_played("game_stat.txt")
+s_s = sum_sold("game_stat.txt")
+s_a = get_selling_avg("game_stat.txt")
+l_t = count_longest_title("game_stat.txt")
+d_a = get_date_avg("game_stat.txt")
+g_g = get_game("game_stat.txt", "Half-Life")
+f.write(str(m_p))
+f.write(" \n")
+f.write(str(s_s))
+f.write(" \n")
+f.write(str(s_a))
+f.write(" \n")
+f.write(str(l_t))
+f.write(" \n")
+f.write(str(d_a))
+f.write(" \n")
+f.write(str(g_g))
+f.close()
 # Export functions
